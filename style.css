@@ -1,17 +1,21 @@
- main {
 
+@import url('https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
+
+main {
+  border: rgb(95, 173, 237);
 }
 ul {
-  color: rgb(70, 152, 237);
+  border-top: 3px solid rgb(95, 173, 237);
+  border-bottom: 3px solid rgb(95, 173, 237);
 }
 
 li {
-  display:
-  width:
+  color: rgb(95, 173, 237);
+  list-style-type: none
 
 }
 
-ul {
-  border-top:
-  border-bottom:
+h1 {
+  color: rgb(95, 173, 237);
+
 }
