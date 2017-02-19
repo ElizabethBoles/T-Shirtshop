@@ -1,21 +1,49 @@
 
 @import url('https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
 
-main {
-  border: rgb(95, 173, 237);
+.border {
+  border: 3px solid rgb(95, 173, 237);
 }
-ul {
+
+#blueshirt {
+  max-width: 100%;
+  float: left;
+  border: 2px solid rgb(95, 173, 237);
+}
+
+.nav {
+  width: 100%;
+}
+
+.nav ul {
   border-top: 3px solid rgb(95, 173, 237);
-  border-bottom: 3px solid rgb(95, 173, 237);
+  margin-top: 0;
+  list-style-type: none;
+  text-align: center;
 }
 
-li {
+.nav li {
   color: rgb(95, 173, 237);
-  list-style-type: none
-
+  float: left;
+  width: 60px;
+  max-width: 100%;
+  font-size: 1.2em;
+  border-right: solid thin;
+  line-height: 40px;
 }
+
+.nav a {
+  text-decoration: none;
+  display: block;
+  color: rgb(95, 173, 237);
+}
+
+.nav a:hover {
+ background-color: rgb(95, 173, 237); 
+}
+
 
 h1 {
   color: rgb(95, 173, 237);
-
+  box-sizing: border-box;
 }
