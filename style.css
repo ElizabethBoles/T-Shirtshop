@@ -11,9 +11,14 @@
   max-width: 100%;
   position: relative;
   display: inline-block;
-  /*float left makes save tree $ up right*/
-  border: 2px solid rgb(95, 173, 237);
+  float: left;
+  border: solid 2px rgb(95, 173, 237);
+  padding: 0;
+}
 
+#blueshirt img{
+  max-width: 100%;
+  padding: 20px;
 }
 
 .nav {
@@ -34,9 +39,11 @@
   width: 80px;
   max-width: 100%;
   font-size: 1.2em;
-  border-top: solid thin;
-  border-right: solid thin;
+  border-top: solid 3px;
+  border-right: solid 3px;
   line-height: 40px;
+  height: 40px
+  font-family: 'Oswald', sans-serif;
 }
 
 .nav a {
@@ -51,8 +58,9 @@
  color: white;
 }
 
-.nav a.active {
+nav a.active {
   background-color: white;
+
 }
 
 .nav ul ul {
@@ -71,9 +79,10 @@
 }
 
 .nav ul li:hover ul {
+  border: solid thin rgb(95, 173, 237);
   visibility: visible;
   opacity: 1;
-  transition: background-color .5s, border .5s;
+  transition: .5s, border .5s;
 }
 
 h1 {
