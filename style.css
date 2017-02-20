@@ -1,14 +1,19 @@
 
 @import url('https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
 
-.border {
-  border: 3px solid rgb(95, 173, 237);
+.container {
+  width: 100%;
+  margin: 0 auto;
+  top: 0;
 }
 
 #blueshirt {
   max-width: 100%;
-  float: left;
+  position: relative;
+  display: inline-block;
+  /*float left makes save tree $ up right*/
   border: 2px solid rgb(95, 173, 237);
+
 }
 
 .nav {
@@ -16,18 +21,20 @@
 }
 
 .nav ul {
-  border-top: 3px solid rgb(95, 173, 237);
-  margin-top: 0;
   list-style-type: none;
+  background-color: white;
   text-align: center;
+  margin: 0;
+  padding: 0;
 }
 
 .nav li {
   color: rgb(95, 173, 237);
   float: left;
-  width: 60px;
+  width: 80px;
   max-width: 100%;
   font-size: 1.2em;
+  border-top: solid thin;
   border-right: solid thin;
   line-height: 40px;
 }
@@ -36,14 +43,39 @@
   text-decoration: none;
   display: block;
   color: rgb(95, 173, 237);
+  transition: .3s background-color;
 }
 
 .nav a:hover {
- background-color: rgb(95, 173, 237); 
+ background-color: rgb(95, 173, 237);
+ color: white;
 }
 
+.nav a.active {
+  background-color: white;
+}
+
+.nav ul ul {
+  visibility: hidden;
+  position: absolute;
+  opacity: 0;
+  bottom: 2.2em;
+  left: auto;
+  right: auto;
+  width: 80px;
+  transition: all 0.5s ease 0s, visibility 0s linear 0.5s;
+}
+
+.nav ul ul li {
+  font-size: 1em;
+}
+
+.nav ul li:hover ul {
+  visibility: visible;
+  opacity: 1;
+  transition: background-color .5s, border .5s;
+}
 
 h1 {
   color: rgb(95, 173, 237);
-  box-sizing: border-box;
 }
